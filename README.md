@@ -6,10 +6,15 @@
 Structure de données:
 Plateau = tableau
 
-Valeurs utilisées: -1
+Valeurs utilisées: -1; 1; 2; 3; 4; 5; 6; 7; 8; 9.
+-1: case vide 
 
 
 
 Fonctions:
 affiche
 est_valide
+
+règles :
+
+sur une même colonne et sur une même il ne peut il y avoir qu'une fois le même chiffre entre 1 et 9 
