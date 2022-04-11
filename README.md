@@ -22,25 +22,33 @@ sur une même colonne et sur une même il ne peut il y avoir qu'une fois le mêm
 mon code actuel:
 
 def affiche(sudoku):
+    print("  12 34")
     num_ligne = 0
     for ligne in sudoku:
         if num_ligne %2 == 0:
-            print("-"*7)
+            print("  ",end="")
+            print("-"*6)
         num_ligne +=1
         num_el = 0
+        print(chr(64+num_ligne) , end="")
         for element in ligne:
             if num_el % 2 == 0:
                 print('|', end="")
             print (element, end="")
             num_el += 1
         print ("|")
-    print("-"*7)
+    print("  ",end="")
+    print("-"*6)
+    
+
 
 sudoku = [[2,0,0,1],
           [0,0,2,3],
           [0,2,3,4],
           [3,0,1,0]]
 
-
-
-affiche(sudoku)
+jeu_continue = True
+while jeu_continue:
+    affiche(sudoku)
+    ...
+    jeu_continue = est_termine(soduku)
