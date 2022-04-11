@@ -18,3 +18,29 @@ est_valide
 règles :
 
 sur une même colonne et sur une même il ne peut il y avoir qu'une fois le même chiffre entre 1 et 9 
+
+mon code actuel:
+
+def affiche(sudoku):
+    num_ligne = 0
+    for ligne in sudoku:
+        if num_ligne %2 == 0:
+            print("-"*7)
+        num_ligne +=1
+        num_el = 0
+        for element in ligne:
+            if num_el % 2 == 0:
+                print('|', end="")
+            print (element, end="")
+            num_el += 1
+        print ("|")
+    print("-"*7)
+
+sudoku = [[2,0,0,1],
+          [0,0,2,3],
+          [0,2,3,4],
+          [3,0,1,0]]
+
+
+
+affiche(sudoku)
