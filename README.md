@@ -6,8 +6,9 @@
 Structure de données:
 Plateau = tableau
 
-Valeurs utilisées: -1; 1; 2; 3; 4; 5; 6; 7; 8; 9.
--1: case vide 
+Valeurs utilisées: 0; 1; 2; 3; 4; 5; 6; 7; 8; 9.
+
+case vide : 0 
 
 
 
